@@ -21,6 +21,7 @@ appendNumber(number) {
   }
 
 chooseOperation(operation) {
+    alert('buts')
     if (this.currentOperand === '') return
     if (this.previousOperand !== '') {
       this.compute()
