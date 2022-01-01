@@ -1,0 +1,72 @@
+*, *::before, * ::after {
+    box-sizing: border-box;
+    cursor: url(https://cur.cursors-4u.net/holidays/hol-3/hol278.cur), auto !important;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+@font-face {
+    font-family: 'Mountains of Christmas', cursive;
+    src: url('MountainsofChristmas-webfont.eot');
+    src: url('MountainsofChristmas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('MountainsofChristmas-webfont.woff2') format('woff2'),
+         url('MountainsofChristmas-webfont.woff') format('woff'),
+         url('MountainsofChristmas-webfont.ttf') format('truetype'),
+         url('MountainsofChristmas-webfont.svg#mountains_of_christmasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #0c98e9, #d7f2f3);
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+    font-size: 2rem;
+    border: 3px solid rgba(245, 79, 79, 0.712);
+    outline: none;
+    background-color: rgba(17, 150, 0, 0.90);
+    border-radius: 10px;
+}
+
+.calculator-grid > button:hover {
+    cursor: url(https://cur.cursors-4u.net/holidays/hol-4/hol386.cur), auto !important;
+    background-color: rgba(17, 150, 0, 0.7);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(255, 0, 0, 0.589);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px;
+}
+
+.output .previous-operand {
+    color:rgba(0, 0, 0, 0.75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color:white;
+    font-size: 2.5rem;
+}
